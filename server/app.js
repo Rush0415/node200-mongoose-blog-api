@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 mongoose.connect('mongodb://localhost/my-blog',{ useNewUrlParser: true } )
 mongoose.Promise = Promise;
 
+// mongodb://<dbuser>:<dbpassword>@ds341837.mlab.com:41837/heroku_psksqn61
+
 const app = express();
 
 app.use(bodyParser.json());
