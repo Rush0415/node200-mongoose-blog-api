@@ -2,12 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/my-blog'
-mongoose.connect(MONGODB_URI)
-
+mongoose.connect('mongodb://testdummy:node200@ds341837.mlab.com:41837/heroku_psksqn61',{ useNewUrlParser: true } )
 mongoose.Promise = Promise;
-
-// mongodb:Rush0415:Dengit0415@ds341837.mlab.com:41837/heroku_psksqn61
 
 const app = express();
 
